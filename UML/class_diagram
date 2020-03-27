@@ -1,0 +1,47 @@
+Class game  |
+____________|
+
+
+                                    Engine
+                                     ====
+                                +game: pymodule
+                                +player: pyclass
+                                
+                                 ---------------
+                                character creation
+                                run a game
+
+
+                                    game
+                                    ====
+                                 +player: tuple
+                                 +name: string
+                                 
+                                 --------------
+                                 ref dict
+                                 ref input module
+
+_____________
+Dependencies |
+_____________|
+                                 Engine ------> game -------> dict
+                                                     -------> input module
+
+
+_________
+Activity |
+_________|
+
+Initial State: "What is your name?\n"
+               |
+   "what game would you like to play?" ----- Initially there is only one game no decision point
+               |
+            "enjoy"
+               |
+             "text"  <---------------               
+           |           |             |
+        choice 1     choice 2        |
+           |           |             |---->End
+           |___________|_____________|
+
+
